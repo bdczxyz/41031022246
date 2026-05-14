@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>异常</title>
+    <link href="/Content/CSS/error.css" rel="stylesheet" />
+</head>
+<body style="height:100%;width:100%;">
+    <div class="center">
+        <div class="main">
+            <div class="left">
+                <img src="/Content/imgs/errorImg.png" />
+            </div>
+            <div class="right">
+                <h1>sorry，您访问的页面发生了异常</h1>
+                <div>提示信息：发生异常，请联系管理员！</div>
+                    <div id="btn">
+                        您可以通过以下方式继续访问...<br />
+                        <a class="btn" href="/Home/Index">返回首页</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script type="text/javascript">
+    
+    if (location.href.toLowerCase() != top.location.href.toLowerCase()) {
+        document.getElementById('btn').style.display = "none";
+    }
+</script>
